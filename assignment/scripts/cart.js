@@ -6,6 +6,7 @@ console.log(`Basket is ${basket}`);
 
 function addItem (item) {
     if (isFull()) {
+        console.log(`The basket is full.`)
         return false;
     }
 
