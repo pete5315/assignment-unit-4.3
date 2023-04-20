@@ -8,15 +8,15 @@ function addItem (item) {
     if (isFull()) {
         console.log(`The basket is full.`)
         return false;
-    }
-
-    else {
+    } else {
         basket.push(item);
         return true;
     }
 }
+
 addItem(2);
 addItem(5);
+
 console.log(`Basket is ${basket}`);
 
 function listItems() {
@@ -44,9 +44,11 @@ function isFull() {
     }
     else {return false}
 }
+
 addItem(1);
 addItem(2);
 addItem(3);
+
 function removeItem(item) {
     if (basket.indexOf(item)===-1) {
         return 'null';
